@@ -1,0 +1,38 @@
+name: release
+on:
+  workflow_call:
+    secrets:
+      npm_access_token:
+        description: Secret for getting JFrog credentials
+        required: true
+  push:
+    branches:
+      - fix-*
+      - feature-*
+      - main
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Install dependencies
+        run: npm ci
+      - name: Release
+        run: npx --yes semantic-release

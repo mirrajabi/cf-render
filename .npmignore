@@ -1,0 +1,17 @@
+.github/
+.out/
+assets/
+coverage/
+dist/
+node_modules/
+src/
+test/
+test-reports/
+.editorconfig
+.eslintignore
+.eslintrc.*
+jest.config.js
+tsconfig.json
+.prettierrc*
+prepublish.js
+.releaserc.json

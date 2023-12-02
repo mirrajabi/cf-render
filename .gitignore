@@ -1,0 +1,36 @@
+node_modules/
+
+# Editors
+.vscode
+.idea
+*.iml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+
+# env files
+.env.local
+.env.*.local
+.env
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# caches and test results
+.out/
+
+# tests
+coverage/
+test-results.xml
+test-reports/

@@ -1,0 +1,49 @@
+{
+    "branches": [
+        {
+            "name": "main",
+            "prerelease": false
+        },
+        {
+            "name": "feature-*",
+            "prerelease": true
+        },
+        {
+            "name": "fix-*",
+            "prerelease": true
+        }
+    ],
+    "plugins": [
+        [
+            "@semantic-release/commit-analyzer",
+            {
+                "releaseRules": [
+                    {
+                        "type": "chore",
+                        "scope": "RELEASE",
+                        "release": "patch"
+                    }
+                ]
+            }
+        ],
+        [
+            "@semantic-release/release-notes-generator"
+        ],
+        [
+            "@semantic-release/npm"
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": []
+            }
+        ],
+        [
+            "@semantic-release/github",
+            {
+                "successComment": false,
+                "failTitle": false
+            }
+        ]
+    ]
+}
