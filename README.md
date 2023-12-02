@@ -61,6 +61,15 @@ import { renderTemplate } from 'cf-render';
 ...
 ```
 
+## How to use it with CDK
+
+CDK generates CloudFormation templates in the `cdk.out` directory when synthesizing the stacks. You can use this tool to render the generated templates. You can also ask CDK to just synthesize your stacks and not deploy them.
+
+```bash
+cdk synth
+cf-render -i cdk.out/MyStack.template.json -o MyStack.png
+```
+
 ## Roadmap
 
 - [x] Put it out there!
