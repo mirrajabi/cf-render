@@ -39,6 +39,7 @@
     "@semantic-release/release-notes-generator": "^12.1.0",
     "commander": "^11.1.0",
     "js-yaml": "^4.1.0",
+    "js-yaml-cloudformation-schema": "^1.0.0",
     "playwright": "^1.40.1"
   },
   "devDependencies": {

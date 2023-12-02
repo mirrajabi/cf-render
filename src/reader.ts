@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
+import {CLOUDFORMATION_SCHEMA} from 'js-yaml-cloudformation-schema';
 
 const acceptedExtensions = ['.json', '.yaml', '.yml'];
 
@@ -42,7 +43,7 @@ export const readTemplate = async (path: string) => {
     case '.yaml':
     case '.yml':
       try {
-        yaml.load(fileContent);
+        yaml.load(fileContent, {schema: CLOUDFORMATION_SCHEMA});
       } catch (e) {
         throw new Error(`Invalid YAML file: ${e}`);
       }
