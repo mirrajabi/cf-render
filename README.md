@@ -8,7 +8,7 @@ This is a simple tool that leverages AWS Application Composer's renderer to rend
 
 ## Example output
 
-Below image is the output of [this template](https://github.com/awslabs/aws-cloudformation-templates/blob/master/community/solutions/StaticWebSiteWithPipeline/stacks/pipeline.json).
+Below image is the output of [this template](https://github.com/mirrajabi/cf-render/blob/main/test/fixtures/template.yaml).
 ![Example output](https://github.com/mirrajabi/cf-render/blob/main/assets/example.png)
 
 ## Installation
