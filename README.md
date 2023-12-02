@@ -11,7 +11,14 @@ Below image is the output of [this template](https://github.com/awslabs/aws-clou
 
 ## Installation
 
-You can install it using npm:
+First you need to install [Playwright](https://playwright.dev/). This tool uses Playwright to render the templates. You can install it using `npm`:
+
+```bash
+# For now this library only supports rendering using Chromium
+npx --yes playwright install chromium
+```
+
+Then you can install `cf-renderer` using npm either globally or locally. If you install it globally, you can use it as a CLI tool. If you install it locally, you can use it as a library.
 
 ```bash
 # To use it as a CLI tool
