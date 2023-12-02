@@ -4,7 +4,7 @@
 
 This is a simple tool that leverages AWS Application Composer's renderer to render CloudFormation templates. Since **CDK** also generates CloudFormation templates, this tool can be used to render the stacks created by CDK projects as well.
 
-**Beta notice**: This tool is currently in beta. Please report any issues you encounter. also read the [Good to know](#good-to-know) section. Unfortunately, [`semantic-release` doesn't support beta releases](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-set-the-initial-release-version-of-my-package-to-0.0.1). So, I'm using `1.0.0` as the version for now.
+**Beta notice**: This tool is currently in beta. Please report any issues you encounter. also read the [Good to know](#good-to-know) section. Unfortunately, [`semantic-release` doesn't support beta releases](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-set-the-initial-release-version-of-my-package-to-0.0.1). That's why this project's version started from `1.0.0`.
 
 ## Example output
 
