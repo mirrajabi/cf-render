@@ -1,5 +1,7 @@
 # CloudFormation Template Renderer
 
+![npm](https://img.shields.io/npm/v/cf-render)
+
 This is a simple tool that leverages AWS Application Composer's renderer to render CloudFormation templates. Since **CDK** also generates CloudFormation templates, this tool can be used to render the stacks created by CDK projects as well.
 
 **Beta notice**: This tool is currently in beta. Please report any issues you encounter. also read the [Good to know](#good-to-know) section.
@@ -7,7 +9,7 @@ This is a simple tool that leverages AWS Application Composer's renderer to rend
 ## Example output
 
 Below image is the output of [this template](https://github.com/awslabs/aws-cloudformation-templates/blob/master/community/solutions/StaticWebSiteWithPipeline/stacks/pipeline.json).
-![Example output](./assets/example.png)
+![Example output](https://github.com/mirrajabi/cf-render/blob/main/assets/example.png)
 
 ## Installation
 
